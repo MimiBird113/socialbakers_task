@@ -1,0 +1,228 @@
+body {
+    background-color: #737881;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    font-size: 14px;
+}
+
+.x {
+    position: absolute;
+    margin: 1% 28%;
+    max-width: 1%;
+    padding: .5%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-container {
+    background-color: #F9F9FA;
+    width: 70%;
+    max-height: 100%;
+    justify-content: flex-end;
+    margin-left: auto;
+    z-index: 1;
+}
+
+.modal-header {
+    display: flex;
+    background-color: white;
+    padding: 2%;
+    flex-grow: 1;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+}
+
+.profile-photo {
+    width: 15%;
+}
+
+.profile-photo img {
+    margin: 10% 20%;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+}
+
+.profile {
+    flex-flow: column wrap;
+    flex-grow: 1;
+    background-color: white;
+    margin-left: 0;
+}
+
+.profile span {
+    background: #737881;
+    border-radius: 25px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    max-height: 10px;
+    padding: 2px 5px;
+    margin: 20px 5px;
+    flex-basis: auto;
+}
+
+.title h3 {
+    padding-top: 5%;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.info,
+.title {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.info h4 {
+    padding: .5%;
+    margin: .5%;
+    font-weight: normal;
+    flex-basis: auto;
+}
+
+.divide {
+    color: lightgrey;
+}
+
+.images {
+    justify-content: flex-end;
+}
+
+.images img {
+    padding: 3%;
+    margin: 2%;
+    border: 1px solid lightgrey;
+    float: right;
+    flex-direction: row;
+}
+
+.svg {
+    width: 5%;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 17.5%;
+    border-left: 1px solid lightgrey;
+}
+
+.modal-body img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-sidebar {
+    padding-top: 2%;
+    max-height: 100%;
+    float: left;
+    width: 25%;
+}
+
+.modal-sidebar a {
+    display: block;
+    padding: 3% 10%;
+    margin: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    background-color: silver;
+    font-weight: bold;
+}
+
+.top {
+    border-bottom: 1px solid lightgrey;
+}
+
+@media only screen and (max-width: 1000px) {
+    .profile-photo {
+        width: 30%;
+    }
+    .images {
+        max-width: 20%;
+    }
+    .images img {
+        width: 20%;
+    }
+    .title {
+        font-size: .75em;
+        flex-grow: 1;
+    }
+    .info {
+        font-size: .85em;
+    }
+    .title span {
+        width: 25%;
+        margin-left: 5%;
+        align-content: flex-end;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .title span {
+        width: 27%;
+    }
+    .x {
+        max-width: 1.5%;
+        margin: 1% 27.5%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .title span {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 698px) {
+    .title {
+        font-size: .5em;
+        display: inline;
+        padding: 5%;
+    }
+    .title h3 {
+        padding: 5%;
+    }
+    .profile-photo {
+        width: 25%;
+    }
+    .title span {
+        margin-top: 10px;
+        width: 35%;
+    }
+    .info {
+        padding: 5%;
+        flex-grow: 1;
+    }
+    .modal-sidebar {
+        width: 30%;
+    }
+    .x {
+        max-width: 2%;
+        margin: 1% 27%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title span {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .x {
+        max-width: 3%;
+        margin: 1% 26%;
+    }
+    .profile-photo {
+        width: 70%;
+    }
+    .images img {
+        width: 32%;
+    }
+}
