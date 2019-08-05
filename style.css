@@ -189,7 +189,7 @@ body {
         padding: 5%;
     }
     .profile-photo {
-        width: 25%;
+        width: 35%;
     }
     .title span {
         margin-top: 10px;
@@ -214,7 +214,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .x {
         max-width: 3%;
         margin: 1% 26%;
